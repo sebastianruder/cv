@@ -1,0 +1,284 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Sebastian Ruder}}
+
+\url{sebastianruder.com} \textbullet
+\ \ ruder.sebastian@gmail.com
+\\
++353 89 237 9192 \ \ \textbullet
+\ \ 9 New Bride Street\ \ \textbullet
+\ \ Dublin, Ireland
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+	
+	\item
+	\headerrow
+		{\textbf{\href{http://www.aylien.com/}{AYLIEN}}}
+		{\textbf{Dublin, Ireland}}
+	\\
+	\headerrow
+		{\emph{NLP Engineer}}
+		{\emph{10/2015 -- Present}}
+	\begin{itemize*}	
+		\item I leverage my research in sentiment analysis to generate business value for AYLIEN, e.g. I implemented a system for aspect-based sentiment analysis of hotel reviews that can be adapted to other domains.
+	\end{itemize*}
+	
+	\item
+	\headerrow
+		{\textbf{INSIGHT Centre for Data Analytics}}
+		{\textbf{Galway, Ireland}}
+	\\
+	\headerrow
+		{\emph{Research Assistant}}
+		{\emph{10/2015 -- Present}}
+
+	\item
+	\headerrow
+		{\textbf{IBM}}
+		{\textbf{Munich, Germany}}
+	\\
+	\headerrow
+		{\emph{Extreme Blue Intern, Watson}}
+		{\emph{08/2015 -- 09/2015}}
+	\begin{itemize*}	
+		\item Design and implementation of text analysis ML components applied to customer data of leading German insurance company VKB; automatically identifies semantics and sentiments of incoming e-mails, e.g. complaints.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Microsoft}}
+		{\textbf{Dublin, Ireland}}
+	\\
+	\headerrow
+		{\emph{Linguistic Engineering Intern, XBox}}
+		{\emph{02/2015 -- 06/2015}}
+	\begin{itemize*}
+		\item Contributed to developing an ML system for analyzing linguistic complexity in C\#; performed feature analysis.
+		\item Created proof of concept and implemented terminology validation using morphology generation.
+		\item Evangelized customer sentiment analysis efforts, drove cross-team collaboration.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{The OpenCog Foundation}}
+		{\url{opencog.org}}
+	\\
+	\headerrow
+		{\emph{Google Summer of Code Intern}}
+		{\emph{Summer 2014}}
+	\begin{itemize*}
+		\item Enabled system to make common-sense inferences and deductions ("Socrates is mortal", etc.)
+		\item Applied inference using probabilistic logic networks on the output of a relationship extractor.
+		\item Documented and extended undocumented temporal inference Python code.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Lingenio GmbH}}
+		{\textbf{Heidelberg, Germany}}
+	\\
+	\headerrow
+		{\emph{Software Engineering Intern}}
+		{\emph{Spring 2014}}
+	\begin{itemize*}
+		\item Created a converter from TBX in Lingenio native format and vice versa.
+		\item Integrated TBX term bases in Dictionary Server; localization: Jinja2, Flask-Babel; configuration: lighttpd.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{SAP}}
+		{\textbf{Walldorf, Germany}}
+	\\
+	\headerrow
+		{\emph{Working Student, Development University}}
+		{\emph{02/2013 -- 02/2014}}
+	\begin{itemize*}
+		\item Created content for internal programming and Design Thinking courses.
+		\item Automated reporting processes, e.g. reduced expenditure of work for monthly training report by > 75\%, i.e. from 8 hours to 2 hour using advanced Excel / VBA scripts.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{TEMIS}}
+		{\textbf{Heidelberg, Germany}}
+	\\
+	\headerrow
+		{\emph{Freelancing Developer}}
+		{\emph{02/2013 -- 10/2013}}
+	\begin{itemize*}
+		\item Created a cosine metric-based word sense disambiguation system leveraging tens of GB of text extracted from Wikipedia and DBpedia in Python; achieved performance comparable to the state-of-the-art.
+	\end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+	
+	\item 
+	\headerrow
+		{\textbf{National University of Ireland}}
+		{\textbf{Galway, Ireland}}
+	\\
+	\headerrow
+		{\emph{College of Engineering and Informatics, Ph.D. Natural Language Processing}}
+		{\emph{10/2015 -- Present}}
+	\begin{itemize*}
+		\item Research in applying ML and deep learning techniques to cross-lingual sentiment analysis in different domains as well as aspect- and entity-based. I'm interested in developing new algorithms and data sources to improve sentiment analysis systems and adapting them to other languages by leveraging existing monolingual / bilingual data as well as generating new data.
+	\end{itemize*}
+
+	\item 
+	\headerrow
+		{\textbf{Ruprecht-Karls-Universität Heidelberg}}
+		{\textbf{Heidelberg, Germany}}
+	\\
+	\headerrow
+		{\emph{Institute of Computational Linguistics, B.A. Computational Linguistics, English Linguistics}}
+		{\emph{10/2012 -- 09/2015}}
+	\begin{itemize*}
+		\item Final grade: 1.0 (\href{https://en.wikipedia.org/wiki/Academic_grading_in_Germany}{German scale}), i.e. A+; thesis: \emph{Construction and Analysis of an Emotion Proposition Store}
+		\item Relevant courses: Statistics, Algorithms and Data Structures, Machine Learning, Formal Syntax \& Semantics
+		\item Relevant online courses: Machine Learning (Stanford), AI (MIT), Into to Algorithms (Berkeley), Deep Learning for NLP (Stanford), Deep Learning (Oxford)
+	\end{itemize*}
+	
+		\item 
+	\headerrow
+		{\textbf{Trinity College}}
+		{\textbf{Dublin, Ireland}}
+	\\
+	\headerrow
+		{\emph{School of Computer Science and Statistics, Computer Science and Language}}
+		{\emph{09/2014 -- 01/2015}}
+	\begin{itemize*}
+		\item Semester abroad
+		\item relevant courses: AI, Fuzzy Logic, High-Tech Entrepreneurship
+	\end{itemize*}
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Awards}
+
+\begin{itemize}
+	\parskip=0.1em
+	
+	\item 
+	\headerrow
+		{Scholarship of the Irish Research Council}
+		{\emph{10/2015 -- Present}}
+	\item 
+	\headerrow
+		{Scholarship of the German state}
+		{\emph{04/2014 -- 09/2015}}	
+	\item 
+	\headerrow
+		{Microsoft Certified Professional (Programming in C\#)}
+		{\emph{06/2015}}
+	\item 
+	\headerrow
+		{Best Delegate award in various Model United Nations conferences}
+		{\emph{11/2012 -- 01/2014}}
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Projects}
+
+\begin{itemize}
+	\parskip=0.1em
+	
+	\item 
+	\headerrow
+		{\textbf{Travel activity recommendation}}
+		{\emph{05/2015}}
+	Implemented a ML system that recommends travel activities to a user based on an analysis of her social media posts using a classifier trained on 400k Tweets pertaining to 50+ travel activities (85\% accuracy) as part of a hackathon project.
+	\item 
+	\headerrow
+		{\textbf{Emotion detection}}
+		{\emph{05/2015 -- 07/2015}}
+	Pattern-based extraction, storage, and distributional analysis of emotion propositions in the Gigaword corpus.
+	\item 
+	\headerrow
+		{\textbf{Coreference resolution}}
+		{\emph{04/2014 -- 07/2014}}
+	Implemented the state-of-the-art Stanford sieve-based approach to coreference resolution in the modular BART system and extended it to achieve state-of-the-art performance in German.
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Languages and Technologies}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Programming Languages:]
+	Python, Java, C\#, R, C, \LaTeX, Prolog, JavaScript, SPARQL
+	\item[Technologies:]
+	SciPy, NumPy, Keras, TensorFlow, NLTK, CoreNLP, MALLET, Weka, UNIX, Git
+	\item[Natural Languages:]
+	Fluent in German and English, advanced in French and Spanish, beginner in Portuguese and Latin	
+	\item[Open Source Contributions:]
+	The OpenCog Foundation
+\end{description*}
+\end{indentsection}
+
+\end{document}
+
