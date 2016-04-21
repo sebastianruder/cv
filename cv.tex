@@ -8,6 +8,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{tgpagella}
+\usepackage{latexsym}
+\usepackage{amssymb}
 \usepackage[hidelinks]{hyperref}
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
@@ -67,10 +69,10 @@
 		{\textbf{Dublin, Ireland}}
 	\\
 	\headerrow
-		{\emph{NLP Engineer}}
+		{\emph{NLP Researcher}}
 		{\emph{10/2015 -- Present}}
 	\begin{itemize*}	
-		\item I leverage my research in sentiment analysis to generate business value for AYLIEN, e.g. I implemented a system for aspect-based sentiment analysis of hotel reviews that can be adapted to other domains.
+		\item I work on developing and improving systems for sentiment analysis with a focus on aspects and entities and adapting systems to new domains and languages. For the latter objective, I also work on developing new general-purpose multilingual embeddings.
 	\end{itemize*}
 	
 	\item
@@ -91,7 +93,9 @@
 		{\emph{Extreme Blue Intern, Watson}}
 		{\emph{08/2015 -- 09/2015}}
 	\begin{itemize*}	
-		\item Design and implementation of text analysis ML components applied to customer data of leading German insurance company VKB; automatically identifies semantics and sentiments of incoming e-mails, e.g. complaints.
+		\item Design and implementation of text analysis ML components applied to customer data of leading German insurance company \emph{Versicherungskammer Bayern}; automatically identifies semantics and sentiments of incoming e-mails, e.g. complaints.
+		\item Pitched project to audience at European Expo and was chosen as one of eight teams to pitch to IBM customers; project was referred to as a "lighthouse project for Watson in Europe" by jury members
+		\item Project was awarded Digital Thought Leadership award in leading contest of German insurance industry by leading German newspaper \emph{Süddeutsche Zeitung} and Google\footnote{\url{https://www.sv-veranstaltungen.de/site/fachbereiche/versicherungs-leuchtturm}} and covered by \emph{Süddeutsche Zeitung}\footnote{\url{http://www.sueddeutsche.de/wirtschaft/kuenstliche-intelligenz-aerger-fuer-watson-1.2772927}}
 	\end{itemize*}
 
 	\item
@@ -224,7 +228,7 @@
 		{\emph{10/2015 -- Present}}
 	\item 
 	\headerrow
-		{Scholarship of the German state}
+		{Cusanuswerk scholarship of the German state}
 		{\emph{04/2014 -- 09/2015}}	
 	\item 
 	\headerrow
@@ -239,31 +243,6 @@
 
 \hrule
 \vspace{-0.4em}
-\subsection*{Projects}
-
-\begin{itemize}
-	\parskip=0.1em
-	
-	\item 
-	\headerrow
-		{\textbf{Travel activity recommendation}}
-		{\emph{05/2015}}
-	Implemented a ML system that recommends travel activities to a user based on an analysis of her social media posts using a classifier trained on 400k Tweets pertaining to 50+ travel activities (85\% accuracy) as part of a hackathon project.
-	\item 
-	\headerrow
-		{\textbf{Emotion detection}}
-		{\emph{05/2015 -- 07/2015}}
-	Pattern-based extraction, storage, and distributional analysis of emotion propositions in the Gigaword corpus.
-	\item 
-	\headerrow
-		{\textbf{Coreference resolution}}
-		{\emph{04/2014 -- 07/2014}}
-	Implemented the state-of-the-art Stanford sieve-based approach to coreference resolution in the modular BART system and extended it to achieve state-of-the-art performance in German.
-
-\end{itemize}
-
-\hrule
-\vspace{-0.4em}
 \subsection*{Languages and Technologies}
 
 \begin{indentsection}{\parindent}
@@ -272,13 +251,39 @@
 	\item[Programming Languages:]
 	Python, Java, C\#, R, C, \LaTeX, Prolog, JavaScript, SPARQL
 	\item[Technologies:]
-	SciPy, NumPy, Keras, TensorFlow, NLTK, CoreNLP, MALLET, Weka, UNIX, Git
+	SciPy, NumPy, Keras, TensorFlow, scikit-learn, NLTK, CoreNLP, MALLET, Weka, UNIX, Git
 	\item[Natural Languages:]
 	Fluent in German and English, advanced in French and Spanish, beginner in Portuguese and Latin	
 	\item[Open Source Contributions:]
 	The OpenCog Foundation
 \end{description*}
 \end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Publications}
+
+\begin{itemize}
+	\parskip=0.1em
+	
+	\item Sebastian Ruder, Parsa Ghaffari, John Breslin (2016). INSIGHT-1 at SemEval-2016 Task 4: Convolutional Neural Networks for Sentiment Classification and Quantification. \textit{In Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval 2016)}, San Diego, US.
+	
+	\item Sebastian Ruder, Parsa Ghaffari, John Breslin (2016). INSIGHT-1 at SemEval-2016 Task 5: Convolutional Neural Networks for Multilingual Aspect-based Sentiment Analysis. \textit{In Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval 2016)}, San Diego, US.
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Reviewing}
+
+\begin{itemize}
+	\parskip=0.1em
+	
+	\item 
+	\headerrow
+		{Reviewer SemEval-2016 Task 5: Aspect-based Sentiment Analysis}
+
+\end{itemize}
 
 \end{document}
 
