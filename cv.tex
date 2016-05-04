@@ -69,10 +69,11 @@
 		{\textbf{Dublin, Ireland}}
 	\\
 	\headerrow
-		{\emph{NLP Researcher}}
+		{\emph{Research Scientist}}
 		{\emph{10/2015 -- Present}}
-	\begin{itemize*}	
-		\item I work on developing and improving systems for sentiment analysis with a focus on aspects and entities and adapting systems to new domains and languages. For the latter objective, I also work on developing new general-purpose multilingual embeddings.
+	\begin{itemize*}
+		\item Developed new aspect-based sentiment analysis (ABSA) endpoint\footnote{\url{https://developer.aylien.com/text-api-demo?text=&language=en&tab=absa&domain=airlines}} for four domains; created data collection and training pipeline; implemented semi-supervised convolutional neural networks.
+		\item My current work focuses on developing and improving systems for sentiment analysis with a focus on aspects and entities and adapting systems to new domains and languages. For the latter objective, I also work on developing new general-purpose cross-lingual embeddings for words and documents.
 	\end{itemize*}
 	
 	\item
@@ -83,6 +84,10 @@
 	\headerrow
 		{\emph{Research Assistant}}
 		{\emph{10/2015 -- Present}}
+		
+	\begin{itemize*}
+		\item As a member of the INSIGHT Centre, I collaborate with other researchers on emotion detection, sentiment analysis, and review analysis.
+	\end{itemize*}
 
 	\item
 	\headerrow
@@ -93,9 +98,9 @@
 		{\emph{Extreme Blue Intern, Watson}}
 		{\emph{08/2015 -- 09/2015}}
 	\begin{itemize*}	
-		\item Design and implementation of text analysis ML components applied to customer data of leading German insurance company \emph{Versicherungskammer Bayern}; automatically identifies semantics and sentiments of incoming e-mails, e.g. complaints.
-		\item Pitched project to audience at European Expo and was chosen as one of eight teams to pitch to IBM customers; project was referred to as a "lighthouse project for Watson in Europe" by jury members
-		\item Project was awarded Digital Thought Leadership award in leading contest of German insurance industry by leading German newspaper \emph{Süddeutsche Zeitung} and Google\footnote{\url{https://www.sv-veranstaltungen.de/site/fachbereiche/versicherungs-leuchtturm}} and covered by \emph{Süddeutsche Zeitung}\footnote{\url{http://www.sueddeutsche.de/wirtschaft/kuenstliche-intelligenz-aerger-fuer-watson-1.2772927}}
+		\item Design and implementation of text analysis ML components applied to customer data of leading German insurance company \emph{Versicherungskammer Bayern}; automatically identifies structural semantics and sentiment of incoming e-mails, e.g. complaints and classifies email based on reason for complaint.
+		\item Pitched project to audience at European Expo and was chosen as one of eight teams to pitch to IBM customers; project was referred to as a "lighthouse project for Watson in Europe" by jury members.
+		\item Project was awarded Digital Thought Leadership award in leading contest of German insurance industry by leading German newspaper \emph{Süddeutsche Zeitung} and Google\footnote{\url{https://www.sv-veranstaltungen.de/site/fachbereiche/versicherungs-leuchtturm}} and covered by \emph{Süddeutsche Zeitung}\footnote{\url{http://www.sueddeutsche.de/wirtschaft/kuenstliche-intelligenz-aerger-fuer-watson-1.2772927}}.
 	\end{itemize*}
 
 	\item
@@ -107,9 +112,9 @@
 		{\emph{Linguistic Engineering Intern, XBox}}
 		{\emph{02/2015 -- 06/2015}}
 	\begin{itemize*}
-		\item Contributed to developing an ML system for analyzing linguistic complexity in C\#; performed feature analysis.
-		\item Created proof of concept and implemented terminology validation using morphology generation.
-		\item Evangelized customer sentiment analysis efforts, drove cross-team collaboration.
+		\item Contributed to developing an ML system for analyzing linguistic complexity of strings in C\# for localization prioritization during testing; performed feature analysis and framed problem as anomaly detection.
+		\item Created proof of concept and implemented terminology validation algorithm using morphology generation.
+		\item Evangelized customer sentiment analysis efforts, drove cross-team collaboration, and provided insights to stakeholders.
 	\end{itemize*}
 
 	\item
@@ -121,9 +126,9 @@
 		{\emph{Google Summer of Code Intern}}
 		{\emph{Summer 2014}}
 	\begin{itemize*}
-		\item Enabled system to make common-sense inferences and deductions ("Socrates is mortal", etc.)
+		\item Enabled system to make common-sense inferences and deductions ("Socrates is mortal", etc.).
 		\item Applied inference using probabilistic logic networks on the output of a relationship extractor.
-		\item Documented and extended undocumented temporal inference Python code.
+		\item Documented and extended Python code for temporal inference.
 	\end{itemize*}
 
 	\item
@@ -135,8 +140,8 @@
 		{\emph{Software Engineering Intern}}
 		{\emph{Spring 2014}}
 	\begin{itemize*}
-		\item Created a converter from TBX in Lingenio native format and vice versa.
-		\item Integrated TBX term bases in Dictionary Server; localization: Jinja2, Flask-Babel; configuration: lighttpd.
+		\item Created a converter from TBX to Lingenio native format and vice versa.
+		\item Integrated TBX term bases in Dictionary Server; created localized web service using Jinja2, Flask-Babel, and lighttpd.
 	\end{itemize*}
 
 	\item
@@ -149,7 +154,7 @@
 		{\emph{02/2013 -- 02/2014}}
 	\begin{itemize*}
 		\item Created content for internal programming and Design Thinking courses.
-		\item Automated reporting processes, e.g. reduced expenditure of work for monthly training report by > 75\%, i.e. from 8 hours to 2 hour using advanced Excel / VBA scripts.
+		\item Automated reporting processes, e.g. reduced expenditure of work for monthly training report by > 75\%, i.e. from 8 hours to 2 hour using Excel / VBA scripts.
 	\end{itemize*}
 
 	\item
@@ -184,6 +189,7 @@
 		{\emph{10/2015 -- Present}}
 	\begin{itemize*}
 		\item Research in applying ML and deep learning techniques to cross-lingual sentiment analysis in different domains as well as aspect- and entity-based. I'm interested in developing new algorithms and data sources to improve sentiment analysis systems and adapting them to other languages by leveraging existing monolingual / bilingual data as well as generating new data.
+		\item More broadly, I'm interested in learning better (cross-lingual) representations for words and documents, leveraging compositionality not only of natural language, and using conversations for language learning.
 	\end{itemize*}
 
 	\item 
@@ -266,9 +272,13 @@
 \begin{itemize}
 	\parskip=0.1em
 	
-	\item Sebastian Ruder, Parsa Ghaffari, John Breslin (2016). INSIGHT-1 at SemEval-2016 Task 4: Convolutional Neural Networks for Sentiment Classification and Quantification. \textit{In Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval 2016)}, San Diego, US.
+	\item Ian D. Wood and Sebastian Ruder (2016). Emoji as emotion tags for tweets. In \textit{Emotion and Sentiment Analysis Workshop}, LREC, Portorož, Slovenia.
 	
-	\item Sebastian Ruder, Parsa Ghaffari, John Breslin (2016). INSIGHT-1 at SemEval-2016 Task 5: Convolutional Neural Networks for Multilingual Aspect-based Sentiment Analysis. \textit{In Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval 2016)}, San Diego, US.
+	\item Sebastian Ruder, Peiman Barnaghi, John Breslin (2016). Analysis and Applications of a Novel Corpus of Influencers on Twitter. In \textit{Twitter for Research Conference}, Galway, Ireland.
+	
+	\item Sebastian Ruder, Parsa Ghaffari, John Breslin (2016). INSIGHT-1 at SemEval-2016 Task 4: Convolutional Neural Networks for Sentiment Classification and Quantification. In \textit{Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval 2016)}, San Diego, US.
+	
+	\item Sebastian Ruder, Parsa Ghaffari, John Breslin (2016). INSIGHT-1 at SemEval-2016 Task 5: Convolutional Neural Networks for Multilingual Aspect-based Sentiment Analysis. In \textit{Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval 2016)}, San Diego, US.
 
 \end{itemize}
 
